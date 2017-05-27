@@ -1,0 +1,36 @@
+[general]
+    reverse_queues = true
+    [general.cpu]
+        [general.cpu.8]
+            rx_queues_enable = true
+            rx_queues_begin = 0
+            rx_queues_end = 8
+            rx_queues_step = 1
+            rps_enable = false
+            rps_begin = 0
+            rps_step = 1
+        [general.cpu.16]
+            rx_queues_enable = true
+            rx_queues_begin = 8
+            rx_queues_end = 16
+            rx_queues_step = 1
+            rps_enable = false
+            rps_begin = 0
+            rps_step = 1
+        [general.cpu.24]
+            rx_queues_enable = true
+            rx_queues_begin = 15
+            rx_queues_end = 24
+            rx_queues_step = 1
+            rps_enable = false
+            rps_begin = 0
+            rps_step = 1
+        [general.cpu.32]
+            rx_queues_enable = true
+            rx_queues_begin = 16
+            rx_queues_end = 32
+            rx_queues_step = 1
+            rps_enable = false
+            rps_begin = 16
+            rps_step = 32
+
