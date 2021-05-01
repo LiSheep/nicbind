@@ -4,9 +4,13 @@ type: docker
 name: default
 
 steps:
-- name: backend
-  image: golang
+- name: build
   commands:
   - go build
   - go test
 
+trigger:
+  branch:
+  - master
+  event:
+  - push
